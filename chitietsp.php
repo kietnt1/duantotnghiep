@@ -18,6 +18,10 @@ if(!isset($_SESSION))
     content: "\f587";
     color: rgb(255, 218, 33);
 }
+/* input[type = "text" ]{
+    width: 200px;
+    height: 200px;
+} */
 
 </style>
 <head>
@@ -339,7 +343,7 @@ if(!isset($_SESSION))
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" name="review" class="txtComment w-100" placeholder="Đánh giá của bạn về sản phẩm này">
+                                                <input type="text" name="review"  style="height: 100px; width: 250px" placeholder="Đánh giá của bạn về sản phẩm này">
                                                 <div class="has-error">
                                                     <span>
                                                         <?php echo (isset($error['review'])) ? $error['review'] : '' ?>

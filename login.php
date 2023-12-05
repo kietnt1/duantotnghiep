@@ -226,7 +226,7 @@ a:hover {
              {
                ?>
               <div id="edit-notify" class="" align="center">
-              <h3 style="margin-top: 16px;"><?= "Thông tin đăng nhập không chính xác" ?></h3>
+              <h3 style="margin-top: 16px; color:#dfdeee;"><?= "Thông tin đăng nhập không chính xác" ?></h3>
                <?php
              }
          }
@@ -238,11 +238,10 @@ a:hover {
     <span class="error animated tada" id="msg"></span>
     <form acton="./login.php" name="form1" class="box" onsubmit="return checkStuff()" method="Post" autocomplete="off">
       <h4>Welcome<span> Back</span></h4>
-      <h5>Sign in to your account.</h5>
+      <h5>Đăng nhập.</h5>
         <input type="text" name="username" placeholder="Username" autocomplete="off">
         <i class="typcn typcn-eye" id="eye"></i>
         <input type="password" name="password" placeholder="Passsword" id="pwd" autocomplete="off">
-
         <a href="quenmatkhau.php" class="forgetpass">Bạn quên mật khẩu ?</a>
         <input type="submit" value="Sign in" class="btn1">
       </form>

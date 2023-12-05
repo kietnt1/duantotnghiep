@@ -54,13 +54,13 @@ if (isset($_POST['send'])) {
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
         $mail->CharSet = "UTF-8";
-        $mail->setFrom('ComputerStore@gmail.com', 'Computerstore.com');
+        $mail->setFrom('PolyTech@gmail.com', 'PolyTech.com');
         $mail->addAddress($_POST['email'], $_POST['name']);
 
         $mail->isHTML(true);
         $mail->Subject = "Xác nhận đơn hàng thành công";
         $mail->Body    = " Xin chào quý khách hàng:  <br>
-                            Cảm ơn quý khách đã mua sản phẩm tại website: ComputerStore <br>";
+                            Cảm ơn quý khách đã mua sản phẩm tại website: PolyTech <br>";
         $mail->send();
         echo 'Message has been sent';
     } catch (Exception $e) {
@@ -161,7 +161,7 @@ if (isset($_POST['send'])) {
                             } elseif ($value['status'] == 1) {
                                 echo '<td class="text-success">Đang Giao Hàng</td>';
                             } elseif ($value['status'] == 2)
-                                echo '<td class="text-success">Thành Công</td>';
+                                echo '<td class="text-primary">Thành Công</td>';
                             else
                                 echo '<td class="text-danger">Đơn hàng bị hủy</td>';
                             ?>

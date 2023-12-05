@@ -11,7 +11,7 @@ $cart = (isset($_SESSION['cart'])) ? $_SESSION['cart'] : [];
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <title>Computer Store mua bán thiết bị điện tử giá rẻ</title>
+    <title>PolyTech mua bán thiết bị điện tử giá rẻ</title>
     <meta name="description"
         content="Chuyên cung cấp đầy đủ linh kiện điện tử đáp ứng theo nhu cầu của khách hàng">
     <meta name="keywords" content="nhà sách online, mua sách hay, sách hot, sách bán chạy, sách giảm giá nhiều">
@@ -89,13 +89,14 @@ $cart = (isset($_SESSION['cart'])) ? $_SESSION['cart'] : [];
                     <form action="cart.php">
                         <input type="hidden" name="action" value="update">
                         <input type="hidden" name="id" value="<?php echo $value['id'] ?>">
-                        <input type="text"name="quantity"value="<?php echo $value['quantity']?>">
-                    <button type="submit" class="btn btn-danger">Cập nhật</button>
+                        <input type="number"name="quantity"value="<?php echo $value['quantity']?>">
+                    <button type="submit" class="btn btn-danger mt-2">Cập nhật</button>
                     </form>
 
                     </td>
                     <td><?php echo number_format($value['price'])  ?>đ</td>
                     <td><?php echo number_format ($value['price'] * $value['quantity'])  ?>đ</td>
+                    
                     <td><a href="./cart.php?id=<?php echo $value['id'] ?>&action=delete" class="btn btn-danger">Xóa</a></td>
 
                     </tr>

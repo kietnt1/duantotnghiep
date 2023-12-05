@@ -13,12 +13,28 @@ include './connect_db.php';
   box-sizing: border-box;
 }
 
-input[type=text], select, textarea {
+/* input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+} */
+input[type = "text" ], input[type = "password"] , input[type="email"],input[type="phone"]{
+  display: block;
+  margin: 2px ;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px 10px;
+  width: 520px;
+  outline: none;
+  color: #d6d6d6;
+      -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+
 }
 
 label {
@@ -169,18 +185,25 @@ lên nhau thay vì nằm cạnh nhau */
     <input type="phone" id="" name="phone" placeholder="Số điện thoại">
     </div>
   </div>
+
   <div class="row">
-    <div class="col-25">
-      <label for="subject">Nội dung</label>
-    </div>
-    <div class="col-75">
-    <textarea name="content" id="" cols="30" rows="10"></textarea>
-    </div>
+      <input type="submit" name="send" value="Thanh toán khi giao hàng">
   </div>
-  <div class="row">
-      <input type="submit" name="send" value="Xác nhận">
+
+  
+  
+  </form>
+  <form action='./xulythanhtoanMOMO.php'>
+  <div class="row mt-4">
+  <input  type="submit" value="Thanh toán QR MOMO" >
   </div>
   </form>
+  <form action='./atm_momo.php'>
+  <div class="row mt-4">
+  <input  type="submit" value="Thanh toán ATM MOMO" >
+  </div>
+  </form>
+  
 </div>
     </section>
    

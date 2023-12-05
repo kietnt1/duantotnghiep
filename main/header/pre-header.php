@@ -6,7 +6,7 @@
         
            <a class="navbar-brand" href="./index.php" style="color: #CF111A;">
            <img src="logo/logo.png" width="70px">
-           <b>Computer</b>Store</img></a>
+           <b>Poly</b>Tech</img></a>
            </div>
 
             <!-- navbar-toggler  -->

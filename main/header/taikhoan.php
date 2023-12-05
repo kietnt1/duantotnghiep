@@ -20,7 +20,7 @@ include './connect_db.php';
                             </div>
 
                      <?php }else { ?>
-                        <div class="dropdown">
+                        <div class="dropdown ">
                                 <li class="nav-item account" type="button" class="btn dropdown" data-toggle="dropdown">
                                  <a href="#" class="btn btn-secondary rounded-circle">
                                 <i class="fa fa-user"></i>
@@ -28,7 +28,7 @@ include './connect_db.php';
                                 <a class="nav-link text-dark text-uppercase" href="#" style="display:inline-block"> Tài khoản </a>
                                 
                             </li>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-menu mb-2 " aria-labelledby="dropdownMenuButton">
                                 <a  href="register.php" class="dropdown-item nutdangky text-center mb-2">Đăng ký</a>
                                 <a href="login.php" class="dropdown-item nutdangnhap text-center"  >Đăng nhập</a>
                             </div>
