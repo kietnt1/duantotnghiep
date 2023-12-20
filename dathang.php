@@ -193,12 +193,12 @@ lên nhau thay vì nằm cạnh nhau */
   
   
   </form>
-  <form action='./xulythanhtoanMOMO.php'>
+  <form action='./xulythanhtoanMOMO.php'method="post">
   <div class="row mt-4">
   <input  type="submit" value="Thanh toán QR MOMO" >
   </div>
   </form>
-  <form action='./atm_momo.php'>
+  <form action='./atm_momo.php' method="post">
   <div class="row mt-4">
   <input  type="submit" value="Thanh toán ATM MOMO" >
   </div>
@@ -221,4 +221,3 @@ lên nhau thay vì nằm cạnh nhau */
 </body>
 
 </html>
-

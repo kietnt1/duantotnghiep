@@ -10,7 +10,7 @@ $category = mysqli_query($con, "SELECT * FROM `orders`  ");
 $total = mysqli_num_rows($category);
 
 //B2 : THiết lập số bảng ghi trên 1 trang
-$limit = 5;
+$limit = 10;
 //B3: tính số trang
 $page = ceil($total / $limit);
 //B4: lấy trang hiện tại
